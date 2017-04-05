@@ -1,0 +1,20 @@
+<h2>Part of You</h2>
+<div ng-controller="submenu">
+  <!--inputan-->
+<ul>
+  <li ng-repeat="each in list track by $index">
+    <span>{{ $index }}</span>
+    <input type="text" ng-model="each.nama" placeholder="Nama"/>
+    <input type="text" ng-model="each.umur" placeholder="Umur"/>
+  </li>
+</ul>
+<!--output-->
+<ul>
+  <li ng-repeat="each in list track by $index">
+    <span>{{ $index }}</span>
+    Nama: {{each.nama}}
+    Umur: {{each.umur}}
+  </li>
+</ul>
+<button type="button" ng-click="submit()">CLICK ME</button>
+</div>
