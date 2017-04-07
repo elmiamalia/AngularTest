@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="coba">
+  <head>
+    <title>Angular Test 4</title>
+    <script src="angular.min.js"></script>
+    <script src="myscript.js"></script>
+  </head>
+  <body>
+    <div ng-controller="masukan">
+      <select ng-model="select">
+        <option ng-repeat="key in dataSelectionKeys" ng-value="key">
+          {{dataSelection[key]}}
+        </option>
+      </select>
+    </div>
+  </body>
+</html>

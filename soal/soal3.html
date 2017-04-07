@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="coba">
+<head>
+       <title>Angular Test</title>
+       <script src="angular.min.js"></script>
+       <script src="myscript.js"></script>
+</head>
+<body>
+       <div ng-init = "daftarorang =[{nama:'Budi'},{nama:'Icha'},{nama:'Fajar'},{nama:'Candra'},{nama:'Anton'},{nama:'Winny'},{nama:'Danu'}]">
+       </div>
+       <ul ng-repeat="do in daftarorang">
+              <li>
+                     <span>{{do.nama}}</span>
+              </li>
+       </ul>
+</body>
+</html>

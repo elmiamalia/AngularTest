@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="coba">
+  <head>
+    <title>Angular Test 1</title>
+    <script src="angular.min.js"></script>
+    <script src="myscript.js"></script>
+
+  </head>
+  <body>
+    <div ng-controller="inputan">
+      <label>Masukkan jumlah uang anda: </label>
+      <br/>
+      <input type="number" ng-model="uang" placeholder = "Ketik disini"/>
+      {{ uang | currency : "IDR " : 2 }}
+    </div>
+  </body>
+</html>
